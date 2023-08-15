@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+            <div class="container-fluid d-flex flex-lg-column flex-sm-row">
+                <a class="navbar-brand h1" href="../index.html"><img src="./img/BLUE.png" alt="Logotipo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDark">
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"">NOSOTROS</a>
+                        </li>
+                        <li class=" nav-item">
+                                <a class="nav-link active" aria-current="page">FRAGANCIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page">PREGUNTAS
+                                FRECUENTES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">FRAGANCIAS</h1>
+        <section class="newCollection">
+            <img src="./img/new-collection.png" alt="Summer collection">
+        </section>
+        <section class="fragancias">
+
+        </section>
+        <section class="gold">
+
+        </section>
+        <div class="modalContenedor">
+            <div class="modalCarrito">
+                <h2>Shopping Cart</h2>
+                <button id="btnCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carritoContenedor">
+
+                </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+                <div id="botonesFinales">
+                    <a class="eliminarTodo">Eliminar Todo</a>
+                    <a href="/finalizarCompra.html" class="finalizarCompra">Finalizar Compra</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="navFooter">
+            <ul>
+                <li class="tituloFooter">BARRA DE NAVEGACIÓN</li>
+                <li><a>Inicio</a></li>
+                <li><a>Nosotros</a></li>
+                <li><a>Fragancias</a></li>
+                <li><a>Contacto</a></li>
+                <li><a>Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+        <div class="redesSociales">
+            <ul>
+                <li class="tituloFooter">REDES SOCIALES</li>
+                <li><a target="_blank">Instagram</a></li>
+                <li><a target="_blank">Twitter</a></li>
+                <li><a target="_blank">Facebook</a></li>
+                <li><a target="_blank">YouTube</a></li>
+                <li><a target="_blank">Threads</a></li>
+            </ul>
+        </div>
+        <div class="extra">
+            <ul>
+                <li class="tituloFooter">INFORMACIÓN NECESARIA</li>
+                <li><a target="_blank">Newsletter</a></li>
+                <li><a target="_blank">Política de devoluciones</a></li>
+                <li><a target="_blank">Botón de arrepentimiento</a></li>
+                <li><a target="_blank">Información de envíos</a></li>
+        </div>
+    </footer>
+    <script src="js/modal.js"></script>
+    <script src="js/stock.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0c4e9be067.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
