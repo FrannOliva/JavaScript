@@ -25,7 +25,6 @@ const validarProducto = (id) => {
         const perfume = arrayPerfumes.find(perfume => perfume.id == id)
         carrito.push(perfume)
         pintarCarrito(perfume)
-        pintarFinalizarCompra(perfume)
         actualizarTotales(carrito)
     } else {
         const perfume = carrito.find(perfume => perfume.id == id)
@@ -85,12 +84,10 @@ const eliminarProducto = (id) => {
     if (producto.cantidad > 1) {
         producto.cantidad--
         listarCarrito(carrito)
-        listarCompra(carrito)
         actualizarTotales(carrito)
     } else {
         carrito.splice(productoId, 1)
         listarCarrito(carrito)
-        listarCompra(carrito)
         actualizarTotales(carrito)
     }
 }
