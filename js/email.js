@@ -18,7 +18,7 @@ document.getElementById('form')
                     gravity: "bottom",
                     position: 'right',
                 }).showToast();;
-                setTimeout(function () { window.location.href = "../index.html" }, 1500);
+                setTimeout(() => { window.location.href = "../index.html" }, 1500);
             }, (err) => {
                 btn.value = 'Send Email';
                 alert(JSON.stringify(err));
