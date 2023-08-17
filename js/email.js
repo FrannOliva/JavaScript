@@ -13,11 +13,12 @@ document.getElementById('form')
             .then(() => {
                 btn.value = 'Send Email';
                 Toastify({
-                    text: "Email enviado correctamente!",
+                    text: "¡Email enviado correctamente! ¡Gracias por su compra!",
                     duration: 1600,
                     gravity: "bottom",
                     position: 'right',
                 }).showToast();;
+                setTimeout(function () { window.location.href = "../index.html" }, 1500);
             }, (err) => {
                 btn.value = 'Send Email';
                 alert(JSON.stringify(err));
