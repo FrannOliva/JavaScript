@@ -605,3 +605,59 @@ input[type="submit"] {
     color: #fff;
     border: none
 }
+
+#productoContenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.productosFinales{
+    border: 2px solid black;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 560px;
+    height: 84px;
+}
+
+.textoFoto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textoFoto img{
+    height: 80px;
+}
+
+.textoFoto p{
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.textoFoto strong{
+    font-size: 15px;
+    margin: 0px;
+    margin-left: 5px;
+}
+
+.cantidad{
+    margin: 0px;
+    margin-right: 8px;
+    font-size: 15px;
+    align-self: center;
+}
+
+.precioProductoFinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
