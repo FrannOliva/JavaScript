@@ -623,6 +623,7 @@ input[type="submit"] {
     justify-content: space-between;
     width: 560px;
     height: 84px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .textoFoto{
