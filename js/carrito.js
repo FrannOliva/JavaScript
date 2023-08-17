@@ -156,7 +156,6 @@ const cargarCarrito = () => {
     if (localStorage.getItem("carrito")) {
         carrito = obtenerCarritoStorage()
         listarCarrito(carrito)
-        listarCompra(carrito)
         actualizarTotales(carrito)
     }
 }
