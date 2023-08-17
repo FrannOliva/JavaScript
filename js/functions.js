@@ -31,25 +31,3 @@ function pintarGold(elemento) {
     `
     container.appendChild(section);
 }
-
-const final = (carrito) => {
-    const contenedor = document.getElementById("productoContenedor")
-
-    carrito.forEach(perfume => {
-        const div = document.createElement("div")
-        div.classList.add("productosFinales")
-        div.innerHTML += `
-        <div class="textoFoto">
-            <img src="${perfume.foto}" class="foto">
-            <div class"texto">
-                <p>${perfume.name}</p>
-                <strong>$${perfume.price}</strong>
-            </div>
-        </div>
-        <p class="cantidad" id=cantidad-${perfume.id}>Cantidad: ${perfume.cantidad}</p>`
-
-        contenedor.appendChild(div)
-    })
-}
-
-final(carrito)
